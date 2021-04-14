@@ -24,7 +24,7 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     int n, l, r;
-    cout << "¬ведите размер массива и ограничени€ дл€ чисел\n";
+    cout << "Input array size and restrictions for numbers of an array:\n";
     cin >> n >> l >> r;
     vector <int> a = generate_array(n, l, r);
     fout << n << '\n';

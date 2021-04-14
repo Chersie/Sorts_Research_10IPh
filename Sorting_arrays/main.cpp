@@ -26,19 +26,19 @@ void output_array(vector <int> &a) {
     return;
 }
 
-void sort1(vector <int> &a) { // вписать название сортировки, весь код в саму функцию(в функцию передаётся только массив по ссылке)
+void sort1(vector <int> &a) { // sort_name
 
 }
 
-void sort2(vector <int> &a) { // вписать название сортировки, весь код в саму функцию(в функцию передаётся только массив по ссылке)
+void sort2(vector <int> &a) { // sort_name
 
 }
 
-void sort3(vector <int> &a) { // вписать название сортировки, весь код в саму функцию(в функцию передаётся только массив по ссылке)
+void sort3(vector <int> &a) { // sort_name
 
 }
 
-void sort4(vector <int> &a) { // вписать название сортировки, весь код в саму функцию(в функцию передаётся только массив по ссылке)
+void sort4(vector <int> &a) { // sort_name
 
 }
 
@@ -53,17 +53,18 @@ int main()
     vector <int> a = input_array();
     //
     int sort_type = 0;
-    cout << "Введите номер сортировки\n";
-    cout << "1 () \t"; // Вставить название сортировки
-    cout << "2 () \t"; // Вставить название сортировки
-    cout << "3 () \t"; // Вставить название сортировки
-    cout << "4 () \n"; // Вставить название сортировки
+    cout << "Input type of sort:\n";
+    cout << "1 () \t"; // sort_name
+    cout << "2 () \t"; // sort_name
+    cout << "3 () \t"; // sort_name
+    cout << "4 () \n"; // sort_name
+    int t;
     cin >> t;
     switch (t) {
-        1: sort1(a); break;
-        2: sort2(a); break;
-        3: sort3(a); break;
-        4: sort4(a); break;
+        case 1: sort1(a); break;
+        case 2: sort2(a); break;
+        case 3: sort3(a); break;
+        case 4: sort4(a); break;
     }
     //
     output_array(a);
