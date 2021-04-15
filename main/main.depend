@@ -33,10 +33,11 @@
 	<windows.h>
 	<ctime>
 
-1618492642 d:\programming\sorts_research_10iph\main\array_generation.h
-	<bits/stdc++.h>
+1618492834 d:\programming\sorts_research_10iph\main\array_generation.h
+	<vector>
 
-1618492623 d:\programming\sorts_research_10iph\main\array_sort.h
+1618492847 d:\programming\sorts_research_10iph\main\array_sort.h
+	<vector>
 
 1618492796 source:c:\users\lenovo\desktop\all stuff i need\ИНФА\Информатика\cpp\сортировки\main\array_generation.cpp
 	<vector>
