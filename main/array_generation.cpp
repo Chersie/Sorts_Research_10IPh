@@ -9,7 +9,7 @@ using namespace std;
 
 void generate_array(int n, int l, int r, string name)
 {
-    ofstream fout(name + '_' + to_string(n) + '_' + to_string(l) + '_' + to_string(r) + ".txt");
+    ofstream fout(name + ".txt");
     srand(time(NULL));
     vector <int> _array(n);
     fout << n << '\n';
