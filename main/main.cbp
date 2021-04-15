@@ -32,7 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="array_generation.cpp" />
+		<Unit filename="array_generation.h" />
+		<Unit filename="array_sort.cpp" />
+		<Unit filename="array_sort.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="main.depend" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
