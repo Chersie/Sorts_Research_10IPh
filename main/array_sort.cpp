@@ -32,7 +32,7 @@ bool reverse_comparator(int &a, int &b) {
     return a < b;
 }
 
-long long sort1(vector <int> a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
+long long sort1(vector <int> &a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
     long long _t = clock();
     int n = a.size();
     for(int j = 0; j < n - 1; j++) {
@@ -47,7 +47,7 @@ long long sort1(vector <int> a, bool(*comparator)(int &x, int &y) = default_comp
     return clock() - _t;
 }
 
-long long sort2(vector <int> a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
+long long sort2(vector <int> &a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
     long long _t = clock();
     int n = a.size();
     for (int k=0; k<n-1; k++)
@@ -62,13 +62,22 @@ long long sort2(vector <int> a, bool(*comparator)(int &x, int &y) = default_comp
     return clock() - _t;
 }
 
-long long sort3(vector <int> a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
+long long sort3(vector <int> &a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
     long long _t = clock();
-
+    int n = a.size();
+      for (int i = 0; i < n; i++)
+      {
+          int k = i;
+          while ((k > 0)  && (a[k] < a[k-1]))
+          {
+              swap (a[k], a[k-1]);
+              k--;
+          }
+      }
     return clock() - _t;
 }
 
-long long sort4(vector <int> a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
+long long sort4(vector <int> &a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
     long long _t = clock();
 
     return clock() - _t;
