@@ -49,6 +49,15 @@ long long sort1(vector <int> a, bool(*comparator)(int &x, int &y) = default_comp
 
 long long sort2(vector <int> a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
     long long _t = clock();
+    int n = a.size();
+for (int k=0; k<n-1; k++)
+for (int i=0; i<n-k; i++)
+            if (a[i]>a[i+1])
+            {
+                int b=a[i];
+                a[i]=a[i+1];
+                a[i+1]=b;
+            }
 
     return clock() - _t;
 }

@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <vector>
+using namespace std;
 #ifndef ARRAY_GENERATION_H_INCLUDED
 #define ARRAY_GENERATION_H_INCLUDED
 
