@@ -2,11 +2,12 @@
 #include <fstream>
 #include <vector>
 #include <ctime>
+#include <algorithm>
 
 using namespace std;
 
-vector <int> input_array() {
-    ifstream fin("array_origin.txt");
+vector <int> input_array(string file) {
+    ifstream fin(file);
     int n;
     fin >> n;
     vector <int> _array(n);
@@ -68,7 +69,7 @@ long long sort3(vector <int> &a, bool(*comparator)(int &x, int &y) = default_com
       for (int i = 0; i < n; i++)
       {
           int k = i;
-          while ((k > 0)  && (a[k] < a[k-1]))
+          while ((k > 0)  && (!comparator(a[k], a[k - 1])))
           {
               swap (a[k], a[k-1]);
               k--;
@@ -77,9 +78,33 @@ long long sort3(vector <int> &a, bool(*comparator)(int &x, int &y) = default_com
     return clock() - _t;
 }
 
+void qs(vector <int> &a, int l, int r, bool(*comparator)(int &x, int &y) = default_comparator) {
+    int x = a[(l + r) / 2];
+    int i = l;
+    int j = r;
+    while(i <= j) {
+        while(comparator(x, a[i])) i++;
+        while(comparator(a[j], x)) j--;
+        if (i <= j) {
+            swap(a[i], a[j]);
+            i++;
+            j--;
+        }
+    }
+    if (i < r) qs(a, i, r, comparator);
+    if (l < j) qs(a, l, j, comparator);
+    return;
+}
+
 long long sort4(vector <int> &a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
     long long _t = clock();
+    qs(a, 0, a.size() - 1, comparator);
+    return clock() - _t;
+}
 
+long long sort5(vector <int> &a, bool(*comparator)(int &x, int &y) = default_comparator) {
+    long long _t = clock();
+    sort(a.begin(), a.end(), comparator);
     return clock() - _t;
 }
 
