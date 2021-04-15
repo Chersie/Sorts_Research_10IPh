@@ -52,3 +52,16 @@
 	<vector>
 	<ctime>
 
+1618495329 source:c:\users\Андрей\documents\sorts_research_10iph\main\array_generation.cpp
+	<vector>
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<string>
+
+1618496208 source:c:\users\Андрей\documents\sorts_research_10iph\main\array_sort.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<ctime>
+
