@@ -1,12 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <windows.h>
 #include <ctime>
 
 using namespace std;
-
-
 
 vector <int> input_array() {
     ifstream fin("array_origin.txt");
@@ -35,19 +32,28 @@ bool reverse_comparator(int &a, int &b) {
     return a < b;
 }
 
-long long sort1(vector <int> a) { // sort_name
+long long sort1(vector <int> a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
+    long long _t = clock();
+    int n = a.size();
+    for(int j = 0; j < n - 1; j++) {
+        int mn = j;
+        for(int i = j + 1; i < n; i++) {
+            if (a[i] < a[mn]) {
+                mn = i;
+            }
+        }
+        swap(a[j], a[mn]);
+    }
+    return clock() - _t;
+}
+
+long long sort2(vector <int> a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
     long long _t = clock();
 
     return clock() - _t;
 }
 
-long long sort2(vector <int> a) { // sort_name
-    long long _t = clock();
-
-    return clock() - _t;
-}
-
-long long sort3(vector <int> a) { // sort_name
+long long sort3(vector <int> a, bool(*comparator)(int &x, int &y) = default_comparator) { // sort_name
     long long _t = clock();
 
     return clock() - _t;
@@ -69,7 +75,3 @@ long long sort_t(int t, vector <int> &a) {
     return -1;
 }
 
-int main()
-{
-    return 0;
-}

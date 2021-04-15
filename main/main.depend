@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1618488547 source:d:\programming\sorts_research_10iph\main\array_generation.cpp
+	<vector>
+	<cstdlib>
+	<ctime>
+
+1618492525 source:d:\programming\sorts_research_10iph\main\array_sort.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<ctime>
+
+1618492345 source:d:\programming\sorts_research_10iph\main\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<windows.h>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	"array_generation.h"
+	"array_sort.h"
+
+1618488547 d:\programming\sorts_research_10iph\main\array_generation.cpp
+	<vector>
+	<cstdlib>
+	<ctime>
+
+1618488305 d:\programming\sorts_research_10iph\main\array_sort.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<windows.h>
+	<ctime>
+
+1618492642 d:\programming\sorts_research_10iph\main\array_generation.h
+	<bits/stdc++.h>
+
+1618492623 d:\programming\sorts_research_10iph\main\array_sort.h
+

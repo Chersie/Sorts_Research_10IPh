@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1618487312 source:d:\programming\sorts_research_10iph\sorting_arrays\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<windows.h>
+	<ctime>
+
