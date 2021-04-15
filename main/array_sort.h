@@ -1,3 +1,5 @@
+#include <vector>
+using namespace std;
 #ifndef ARRAY_SORT_H_INCLUDED
 #define ARRAY_SORT_H_INCLUDED
 //#include "array_sort.cpp"
