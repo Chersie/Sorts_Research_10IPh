@@ -7,7 +7,7 @@
 using namespace std;
 
 
-vector <int> generate_array(int n, int l, int r, int iteration)
+void generate_array(int n, int l, int r, int iteration)
 {
     ofstream fout(to_string(iteration) + '_' + to_string(n) + '_' + to_string(l) + '_' + to_string(r) + ".txt");
     srand(time(NULL));
@@ -17,6 +17,6 @@ vector <int> generate_array(int n, int l, int r, int iteration)
         _array[i] = rand() % (r - l + 1) + l;
         fout << _array[i] << ' ';
     }
-    return _array;
+    return;
 }
 

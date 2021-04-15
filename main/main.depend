@@ -1,10 +1,12 @@
 # depslib dependency file v1.0
-1618488547 source:d:\programming\sorts_research_10iph\main\array_generation.cpp
+1618494903 source:d:\programming\sorts_research_10iph\main\array_generation.cpp
 	<vector>
 	<cstdlib>
 	<ctime>
+	<fstream>
+	<string>
 
-1618492525 source:d:\programming\sorts_research_10iph\main\array_sort.cpp
+1618493668 source:d:\programming\sorts_research_10iph\main\array_sort.cpp
 	<iostream>
 	<fstream>
 	<vector>
