@@ -1,18 +1,19 @@
 # depslib dependency file v1.0
-1618494903 source:d:\programming\sorts_research_10iph\main\array_generation.cpp
+1618502343 source:d:\programming\sorts_research_10iph\main\array_generation.cpp
 	<vector>
 	<cstdlib>
 	<ctime>
 	<fstream>
 	<string>
 
-1618493668 source:d:\programming\sorts_research_10iph\main\array_sort.cpp
+1618511574 source:d:\programming\sorts_research_10iph\main\array_sort.cpp
 	<iostream>
 	<fstream>
 	<vector>
 	<ctime>
+	<algorithm>
 
-1618492345 source:d:\programming\sorts_research_10iph\main\main.cpp
+1618511069 source:d:\programming\sorts_research_10iph\main\main.cpp
 	<iostream>
 	<fstream>
 	<vector>
@@ -35,10 +36,10 @@
 	<windows.h>
 	<ctime>
 
-1618492834 d:\programming\sorts_research_10iph\main\array_generation.h
+1618502391 d:\programming\sorts_research_10iph\main\array_generation.h
 	<vector>
 
-1618492847 d:\programming\sorts_research_10iph\main\array_sort.h
+1618510346 d:\programming\sorts_research_10iph\main\array_sort.h
 	<vector>
 
 1618492796 source:c:\users\lenovo\desktop\all stuff i need\ИНФА\Информатика\cpp\сортировки\main\array_generation.cpp
